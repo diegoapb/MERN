@@ -4,8 +4,16 @@ import './App.css';
 
 class App extends Component {
   render() {
+    const names =["pedro","juan","german"];
     return (
-      <h1>Hola mundo12wqe3</h1>
+      <div>
+        <h1>Hola mundo12wqe343</h1>
+        <ul>
+          {names.map(name=>
+          <li>{name}</li>
+          )}
+        </ul>
+      </div>
     );
   }
 }
