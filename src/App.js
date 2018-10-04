@@ -2,10 +2,17 @@ import React, { Component } from 'react';
 
 import './App.css';
 
+import Welcome from "./title"
+
 class App extends Component {
   render() {
+    const names=["Pedro","Pipe","Juan"];
     return (
-      <h1>Hola mundo12wqe3</h1>
+      <div>
+        {names.map(name =>
+        <Welcome name={name} />
+        )}
+      </div>
     );
   }
 }
